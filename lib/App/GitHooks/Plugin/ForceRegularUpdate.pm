@@ -143,7 +143,7 @@ sub run_pre_commit
 	my $update_file = $config->get( 'ForceRegularUpdate', 'update_file' );
 	croak "'update_file' must be defined in the [ForceRegularUpdate] section of your .githooksrc file"
 		if !defined( $update_file );
-	$update_file =~ s/\$ENV{('[^']+'|"[^"]+"|[^\}])}/$ENV{$1}/eg;
+	$update_file =~ s/\$ENV{('[^']+'|"[^"]+"|[^\}])}/$ENV{$1}/xeg;
 
 	# Check if the update was ever performed.
 	my $failure_character = $app->get_failure_character();
