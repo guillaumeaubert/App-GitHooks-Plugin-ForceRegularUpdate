@@ -1,5 +1,9 @@
 Revision history for App-GitHooks-Plugin-ForceRegularUpdate
 
+v1.0.3  2014-06-08
+        - Bumped git requirement to v1.7.4.1.
+        - Made git test safer to run.
+
 v1.0.2  2014-06-02
         - Sync manifest.
 
