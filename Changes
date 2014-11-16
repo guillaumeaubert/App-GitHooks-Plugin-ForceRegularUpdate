@@ -1,5 +1,8 @@
 Revision history for App-GitHooks-Plugin-ForceRegularUpdate
 
+v1.0.4  2014-11-15
+        - Fix warnings with Perl 5.21 (GH-1).
+
 v1.0.3  2014-06-08
         - Bumped git requirement to v1.7.4.1.
         - Made git test safer to run.
