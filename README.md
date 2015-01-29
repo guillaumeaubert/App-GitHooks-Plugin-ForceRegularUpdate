@@ -3,6 +3,7 @@ App-GitHooks-Plugin-ForceRegularUpdate
 
 [![Build Status](https://travis-ci.org/guillaumeaubert/App-GitHooks-Plugin-ForceRegularUpdate.svg?branch=master)](https://travis-ci.org/guillaumeaubert/App-GitHooks-Plugin-ForceRegularUpdate)
 [![Coverage Status](https://coveralls.io/repos/guillaumeaubert/App-GitHooks-Plugin-ForceRegularUpdate/badge.svg?branch=master)](https://coveralls.io/r/guillaumeaubert/App-GitHooks-Plugin-ForceRegularUpdate?branch=master)
+[![Latest Version](https://img.shields.io/github/tag/guillaumeaubert/App-GitHooks-Plugin-ForceRegularUpdate.svg?style=flat)](https://metacpan.org/release/App-GitHooks-Plugin-ForceRegularUpdate)
 
 App::GitHooks plugin to force running a specific tool at regular intervals.
 
