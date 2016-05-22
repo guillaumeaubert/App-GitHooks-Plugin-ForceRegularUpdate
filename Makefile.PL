@@ -3,24 +3,24 @@ require 5.010;
 use ExtUtils::MakeMaker;
 WriteMakefile
 (
-  'NAME' => 'App::GitHooks::Plugin::ForceRegularUpdate',
-  'INSTALLDIRS' => 'site',
-  'PREREQ_PM' => {
-                   'Git::Repository' => 0,
-                   'Carp' => 0,
-                   'File::Slurp' => 0,
-                   'Capture::Tiny' => 0,
-                   'Test::More' => '0.94',
-                   'Test::FailWarnings' => 0,
-                   'Test::Exception' => 0,
-                   'App::GitHooks' => 0,
-                   'Test::Requires::Git' => '1.005'
-                 },
   'VERSION_FROM' => 'lib/App/GitHooks/Plugin/ForceRegularUpdate.pm',
   'PL_FILES' => {},
-  'EXE_FILES' => [],
   'test' => {
               'TESTS' => 't/*.t'
-            }
+            },
+  'EXE_FILES' => [],
+  'PREREQ_PM' => {
+                   'Test::FailWarnings' => 0,
+                   'Git::Repository' => 0,
+                   'Capture::Tiny' => 0,
+                   'Test::More' => '0.94',
+                   'Test::Requires::Git' => '1.005',
+                   'App::GitHooks' => 0,
+                   'Test::Exception' => 0,
+                   'Carp' => 0,
+                   'File::Slurp' => 0
+                 },
+  'INSTALLDIRS' => 'site',
+  'NAME' => 'App::GitHooks::Plugin::ForceRegularUpdate'
 )
 ;
